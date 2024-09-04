@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./App.css";
 
 function App(): React.JSX.Element {
@@ -14,11 +15,16 @@ function App(): React.JSX.Element {
             </p>
             <p> Hello World
             </p>
-            <ul>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third Item</li>
-            </ul>
+            <img src="./Cuse.jpg" alt="Pic of Me" />
+            <div style={ {background: 'red'}}>
+
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third Item</li>
+                </ul>
+            </div>
+            <Button onClick={ () => { console.log("Hello World!") } }>Log Hello World</Button>
         </div>
     );
 }
