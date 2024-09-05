@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./App.css";
 
 function App(): React.JSX.Element {
@@ -7,6 +8,7 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
+            <h1>This is my header!</h1>
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Conor McCloskey. 
@@ -16,6 +18,16 @@ function App(): React.JSX.Element {
             </p>
             <p> Hello World
             </p>
+            <img src="./Cuse.jpg" alt="Pic of Me" />
+            <div style={ {background: 'red'}}>
+
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third Item</li>
+                </ul>
+            </div>
+            <Button onClick={ () => { console.log("Hello World!") } }>Log Hello World</Button>
         </div>
     );
 }
