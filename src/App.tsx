@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./App.css";
+import Me from './Me.jpg';
 
 function App(): React.JSX.Element {
     return (
@@ -18,7 +19,7 @@ function App(): React.JSX.Element {
             </p>
             <p> Hello World
             </p>
-            <img src="./Cuse.jpg" alt="Pic of Me" />
+            <img src={Me} alt="Pic of Me" />
             <div style={ {background: 'red'}}>
 
                 <ul>
